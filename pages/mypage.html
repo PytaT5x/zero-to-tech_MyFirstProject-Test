@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人主页 · 动画示例</title>
+  <!-- 引入 Anime.js (通过 CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  <!-- 使用模块化 CSS (这里将样式分离到 style.css，但为了完整展示，我们会在 head 中内联部分基础样式，并单独展示 CSS 文件) -->
+  <link rel="stylesheet" href="../css/mypage_style.css">
+</head>
+<body>
+  <!-- 主容器：个人主页卡片 -->
+  <main class="profile-card">
+    <!-- 头像区域 -->
+    <div class="avatar-wrapper">
+      <img 
+        class="avatar" 
+        src="../static/pict/Pyta.jpg" 
+        alt="个人头像"
+        width="120"
+        height="120"
+      >
+    </div>
+
+    <!-- 姓名与头衔 -->
+    <h1 class="name">派塔Pyta</h1>
+    <p class="title">前端开发 · 创意技术爱好者</p>
+
+    <!-- 社交链接列表 -->
+    <ul class="social-links">
+      <li><a href="#" class="social-btn" data-platform="github">GitHub</a></li>
+      <li><a href="#" class="social-btn" data-platform="twitter">Twitter</a></li>
+      <li><a href="#" class="social-btn" data-platform="linkedin">LinkedIn</a></li>
+      <li><a href="#" class="social-btn" data-platform="dribbble">Dribbble</a></li>
+    </ul>
+
+    <!-- 自我介绍段落 -->
+    <p class="bio">
+      热爱构建优雅的交互界面，喜欢用代码创造有趣的事物。目前专注于现代前端与动效设计。
+    </p>
+
+    <!-- 联系方式按钮 -->
+    <button class="contact-btn" id="contactBtn">📬 联系我</button>
+  </main>
+
+  <!-- 模块化 JS 入口 (type="module" 表示 ES6 模块) -->
+  <script type="module" src="../js/mypage_main.js"></script>
+</body>
+</html>
